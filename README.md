@@ -37,6 +37,7 @@ To use frida-ios-dump, follow these steps:
    You can also decrypt iOS over Wireless using the remote communication provided by Frida, although USB is recommended.
 6. Run the following command to install agent dependencies:
    ```shell
+   cd agent
    npm -ddd install
    ```
 7. Run the following commands to decrypt apps:
