@@ -44,17 +44,20 @@ cd frida-ios-dump
 source .venv/bin/activate
 ``` 
 
-Launch and decrypt an app by its bundle identifier:
+Decrypt an already running app by its display name:
+
+```shell
+python ./decrypter.py -U -n Spotify 
+```
+
+Or launch and decrypt an app by its bundle identifier:
 
 ```shell
 python ./decrypter.py -U -f com.google.ios.youtube
 ```
 
-Or decrypt an already running app by its display name:
-
-```shell
-python ./decrypter.py -U -n Spotify 
-```
+> [!NOTE]
+> Launching apps with Frida via `-f` has [issues](https://github.com/frida/frida/issues/3484) with some versions of Dopamine (and possibly other jailbreaks) and may fail in strange ways.
 
 ## What's New?
 
